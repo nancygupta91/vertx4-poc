@@ -1,0 +1,36 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Swagger Account",
+    "license": {
+      "name": "MIT"
+    },
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://locahost:2222"
+    }
+  ],
+  "paths": {
+    "/welcome": {
+      "get": {
+        "summary": "Display Welcome message",
+        "operationId": "welcome",
+        "tags": [
+          "welcome"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Expected response to a valid request"
+          },
+          "default": {
+            "description": "unexpected error"
+          }
+        }
+      }
+    }
+  }
+}
