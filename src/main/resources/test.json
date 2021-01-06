@@ -31,6 +31,25 @@
           }
         }
       }
-    }
+    },
+    "/file": {
+            "post": {
+                "summary": "store a file",
+                "description": "store a file in bucket in the couchbase.",
+                "parameters": [],
+                "operationId": "file",
+                "responses": {
+                    "201": {
+                        "description": "OK"
+                    },
+                    "default": {
+                        "description": "Not Found"
+                    }
+                },
+                "tags": [
+                    "File Management"
+                ]
+            }
+        }
   }
 }
